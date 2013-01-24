@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GtkmmOpenGL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../Debug/libGtkmmOpenGL" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_LIB" />
+					<Add directory="./" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="./" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../Release/libGtkmmOpenGL" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_LIB" />
+					<Add directory="./" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="./" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`pkg-config --cflags  gtkmm-2.4`" />
+			<Add option="`pkg-config --cflags  gtkglext-1.0`" />
+		</Compiler>
+		<Unit filename="GLDrawingArea.cpp" />
+		<Unit filename="GLDrawingArea.h" />
+		<Unit filename="GLException.h" />
+		<Unit filename="GLStdafx.cpp" />
+		<Unit filename="GLStdafx.h" />
+		<Unit filename="GLWindow.cpp" />
+		<Unit filename="GLWindow.h" />
+		<Unit filename="GtkmmOpenGL.cpp" />
+		<Unit filename="GtkmmOpenGL.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
